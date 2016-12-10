@@ -16,11 +16,19 @@ namespace Assets.Scripts
         {
             if (_fortification != null)
             {
-                _fortification.SetType(type);
+                _fortification.PlaceFortification(type);
             }
             else
             {
                 _fortification = new Fortification(type);
+            }
+        }
+
+        public void RemoveFortification()
+        {
+            if(_fortification != null)
+            {
+                _fortification.RemoveFortification();
             }
         }
 
@@ -59,8 +67,11 @@ namespace Assets.Scripts
         {
             if (_fortification != null)
             {
-                Color color = _fortification.GetColor();
-                GameBoard.DrawRect(_rect, color);
+                if (_fortification.IsSet())
+                {
+                    Color color = _fortification.GetColor();
+                    GameBoard.DrawRect(_rect, color);
+                }
             }
         }
 
