@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: f06af8377f7c541448ebbe652724e61d
+timeCreated: 1481369297
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: elf1_000
+    21300002: elf1_001
+    21300004: elf1_002
+    21300006: elf1_003
+    21300008: elf1_004
+    21300010: elf1_005
+    21300012: elf1_006
+    21300014: elf1_007
+    21300016: elf1_008
+    21300018: elf1_009
+    21300020: elf1_010
+    21300022: elf1_011
+    21300024: elf1_012
+    21300026: elf1_013
+    21300028: elf1_014
+    21300030: elf1_015
+    21300032: elf1_016
+    21300034: elf1_017
+    21300036: elf1_018
+    21300038: elf1_019
+    21300040: elf1_020
+    21300042: elf1_021
+    21300044: elf1_022
+    21300046: elf1_023
+    21300048: elf1_024
+    21300050: elf1_025
+    21300052: elf1_026
+    21300054: elf1_027
+    21300056: elf1_028
+    21300058: elf1_029
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elf1_000
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1103
+        width: 238
+        height: 236
+      alignment: 9
+      pivot: {x: 0.51890755, y: 0.51059324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_001
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 635
+        width: 237
+        height: 241
+      alignment: 9
+      pivot: {x: 0.51687765, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_002
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 870
+        width: 238
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5147059, y: 0.521645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_003
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1341
+        width: 239
+        height: 231
+      alignment: 9
+      pivot: {x: 0.5167364, y: 0.521645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_004
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1574
+        width: 241
+        height: 236
+      alignment: 9
+      pivot: {x: 0.51244813, y: 0.51059324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_005
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1343
+        width: 239
+        height: 234
+      alignment: 9
+      pivot: {x: 0.5167364, y: 0.51495725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_006
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1354
+        width: 240
+        height: 224
+      alignment: 9
+      pivot: {x: 0.51458335, y: 0.5379464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_007
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1580
+        width: 242
+        height: 230
+      alignment: 9
+      pivot: {x: 0.51033056, y: 0.523913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_008
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1812
+        width: 242
+        height: 235
+      alignment: 9
+      pivot: {x: 0.51033056, y: 0.51276594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_009
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1579
+        width: 245
+        height: 234
+      alignment: 9
+      pivot: {x: 0.5040816, y: 0.51495725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_010
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1812
+        width: 246
+        height: 235
+      alignment: 9
+      pivot: {x: 0.5020325, y: 0.5042553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1814
+        width: 247
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1584
+        width: 245
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5040816, y: 0.5197368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_013
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1815
+        width: 247
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5021552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1356
+        width: 243
+        height: 226
+      alignment: 9
+      pivot: {x: 0.50823045, y: 0.51106197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_015
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1125
+        width: 239
+        height: 227
+      alignment: 9
+      pivot: {x: 0.5167364, y: 0.5088106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_016
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1114
+        width: 239
+        height: 227
+      alignment: 9
+      pivot: {x: 0.5167364, y: 0.50440526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_017
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 666
+        width: 238
+        height: 220
+      alignment: 9
+      pivot: {x: 0.51890755, y: 0.5204545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 901
+        width: 239
+        height: 219
+      alignment: 9
+      pivot: {x: 0.5167364, y: 0.522831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_019
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 215
+        width: 236
+        height: 218
+      alignment: 9
+      pivot: {x: 0.52330506, y: 0.51605505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_020
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 414
+        width: 236
+        height: 222
+      alignment: 9
+      pivot: {x: 0.52330506, y: 0.5247748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_021
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 198
+        width: 236
+        height: 226
+      alignment: 9
+      pivot: {x: 0.52330506, y: 0.5287611}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_022
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 888
+        width: 238
+        height: 235
+      alignment: 9
+      pivot: {x: 0.51890755, y: 0.51276594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_023
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 435
+        width: 237
+        height: 229
+      alignment: 9
+      pivot: {x: 0.52109706, y: 0.5262009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_024
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 638
+        width: 237
+        height: 230
+      alignment: 9
+      pivot: {x: 0.52109706, y: 0.523913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_025
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 426
+        width: 237
+        height: 238
+      alignment: 9
+      pivot: {x: 0.52109706, y: 0.50630254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_026
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1122
+        width: 239
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5167364, y: 0.51939654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_027
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 401
+        width: 236
+        height: 232
+      alignment: 9
+      pivot: {x: 0.5190678, y: 0.51939654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_028
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 666
+        width: 238
+        height: 233
+      alignment: 9
+      pivot: {x: 0.51890755, y: 0.5171674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: elf1_029
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 878
+        width: 238
+        height: 234
+      alignment: 9
+      pivot: {x: 0.51890755, y: 0.51495725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
