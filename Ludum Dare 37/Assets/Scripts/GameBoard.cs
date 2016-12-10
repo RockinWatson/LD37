@@ -1,117 +1,9 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using Assets.Scripts;
 using System.Collections.Generic;
-using UnityEngine;
-
-public class Fortification
-{
-    public enum Type
-    {
-        TOWER1 = 0,
-        TOWER2 = 1,
-        TOWER3 = 2,
-        TOWER4 = 3,
-        TOWER5 = 4,
-    };
-    private Type _type;
-    public Type GetType() { return _type; }
-    public void SetType(Type type) { _type = type; }
-
-    public Fortification(Type type)
-    {
-        _type = type;
-    }
-
-    //@TEMP: Until we get SpriteRenderers going...
-    public Color GetColor()
-    {
-        //@TODO: Draw the legit tower sprite er whatever.
-        switch (_type)
-        {
-            case Type.TOWER1:
-                return Color.red;
-            case Type.TOWER2:
-                return Color.cyan;
-            case Type.TOWER3:
-                return Color.green;
-            case Type.TOWER4:
-                return Color.yellow;
-            case Type.TOWER5:
-                return Color.blue;
-            default:
-                return Color.black;
-        }
-    }
-}
-
-public class GameCell
-{
-    private int _x;
-    private int _y;
-    private Vector2 _dim;
-    private Rect _rect;
-
-    private Fortification _fortification = null;
-    public Fortification GetFortification() { return _fortification; }
-    public void SetFortification(Fortification.Type type)
-    {
-        if (_fortification != null)
-        {
-            _fortification.SetType(type);
-        }
-        else
-        {
-            _fortification = new Fortification(type);
-        }
-    }
-
-    public GameCell(Vector2 origin, int x, int y, Vector2 dim)
-    {
-        _x = x;
-        _y = y;
-        _dim = dim;
-
-        Vector2 pos = origin + new Vector2(_x * _dim.x, _y * -_dim.y);
-        _rect = new Rect(pos, new Vector2(_dim.x, -_dim.y));
-    }
-
-    //@TODO: Placeholder for now.
-    public void Draw(bool debug=false)
-    {
-        if (debug)
-        {
-            //DrawSquare(center, Color.yellow);
-            GameBoard.DrawRect(_rect, Color.yellow);
-        }
-        DrawFortification();
-    }
-
-    private void DrawSquare(Vector3 pos, Color color)
-    {
-        Vector3 UL = pos;
-        Vector3 UR = pos + Vector3.right * _dim.x;
-        Vector3 LL = pos + Vector3.down * _dim.y;
-        Vector3 LR = pos + Vector3.right * _dim.x + Vector3.down * _dim.y;
-
-        GameBoard.DrawSquare(UL, UR, LL, LR, color);
-    }
-
-    private void DrawFortification()
-    {
-        if (_fortification != null)
-        {
-            Color color = _fortification.GetColor();
-            GameBoard.DrawRect(_rect, color);
-        }
-    }
-
-    public void UpdateDim(Vector2 dim)
-    {
-        _dim = dim;
-    }
-}
 
 public class GameBoard : MonoBehaviour {
-
+    #region Initialize Vars
     [SerializeField]
     private Transform _origin;
 
@@ -129,7 +21,9 @@ public class GameBoard : MonoBehaviour {
     private List<List<GameCell>> _board = null;
 
     private Fortification.Type _selectedFortificationType = Fortification.Type.TOWER1;
+    #endregion
 
+    #region Create Board
     private void Awake()
     {
         CreateBoard();
@@ -149,6 +43,7 @@ public class GameBoard : MonoBehaviour {
             _board.Add(row);
         }
     }
+    #endregion
 
     private void Update()
     {
