@@ -154,12 +154,9 @@ public class GameBoard : MonoBehaviour {
             float realXMax = boardRect.xMax;
             float realYMax = boardRect.yMin;
 
-            float yRange = realYMax - realYMin;
-            float xRange = realXMax - realXMin;
-
             Debug.Log("CONTAINS!");
-            int xIndex = (int)((pos.x - realXMin) / (realXMax - realXMin) * xRange);
-            int yIndex = _board.Count - (int)((pos.y - realYMin) / (realYMax - realYMin) * yRange) - 1;
+            int xIndex = Mathf.FloorToInt((pos.x - realXMin) / (realXMax - realXMin) * _width);
+            int yIndex = _board.Count - (int)((pos.y - realYMin) / (realYMax - realYMin) * _height) - 1;
 
             Debug.Log(string.Format("{0} {1}", xIndex, yIndex));
             return _board[yIndex][xIndex];
