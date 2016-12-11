@@ -79,7 +79,7 @@ public class GameBoard : MonoBehaviour {
     private void UpdatePlayerMouse()
     {
         Vector3 pos = GetMouseWorldPos();
-        DrawMousePos(pos);
+        //DrawMousePos(pos);
 
         GameCell cell = GetGameCellOnWorldPos(pos);
         if (cell != null)
@@ -101,7 +101,7 @@ public class GameBoard : MonoBehaviour {
             }
             else
             {
-                cell.Draw(true);
+                //cell.Draw(true);
             }
         }
     }
@@ -158,7 +158,7 @@ public class GameBoard : MonoBehaviour {
     public GameCell GetGameCellOnWorldPos(Vector3 pos)
     {
         Rect boardRect = getBoardRect();
-        DrawRect(boardRect, Color.magenta, false);
+        //DrawRect(boardRect, Color.magenta, false);
         //if (boardRect.Contains(pos))
         if (myRectContainsPoint(boardRect, pos))
         {
