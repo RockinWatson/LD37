@@ -21,7 +21,6 @@ public class GameBoard : MonoBehaviour {
     private List<List<GameCell>> _board = null;
 
     private Fortification.Type _selectedFortificationType = Fortification.Type.TOWER1;
-    private bool _removeFortification = false;
     #endregion
 
     #region Create Board
@@ -62,6 +61,11 @@ public class GameBoard : MonoBehaviour {
         return pos;
     }
 
+    private bool IsRemoveModifierActive()
+    {
+        return (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift));
+    }
+
     private void UpdatePlayerMouse()
     {
         Vector3 pos = GetMouseWorldPos();
@@ -72,7 +76,7 @@ public class GameBoard : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (_removeFortification)
+                if (IsRemoveModifierActive())
                 {
                     cell.RemoveFortification();
                 }
@@ -110,11 +114,6 @@ public class GameBoard : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             _selectedFortificationType = Fortification.Type.TOWER5;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            _removeFortification = !_removeFortification;
         }
     }
 

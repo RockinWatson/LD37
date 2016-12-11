@@ -25,37 +25,22 @@ namespace Assets.Scripts
 
         public Fortification(Type type, Vector3 pos)
         {
-        
-            SetType(type);
             _pos = pos;
-            Debug.Log(_pos);
-
+            SetType(type);
         }
 
-        public void PlaceFortification(Type type)
+        public void SetType(Type type)
         {
-            //@TODO: Check to see if something already exists here...
             if (!IsSet())
             {
-                SetType(type);
+                _go = GetPrefab(type);
+                _go.gameObject.transform.position = _pos;
+                _type = type;
             }
-        }
-
-        private void SetType(Type type)
-        {
-            if (_type != Type.NONE)
+            else
             {
-                if (_go != null)
-                {
-                    GameObject.Destroy(_go);
-                }
+                Debug.Log("Fortification Already Set.");
             }
-
-
-            _go = GetPrefab(type);
-            _go.gameObject.transform.position = _pos;
-            //Debug.Log(_cell.getRect().center);
-            _type = type;
         }
 
         public void RemoveFortification()

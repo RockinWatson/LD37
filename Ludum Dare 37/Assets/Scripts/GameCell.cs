@@ -17,7 +17,7 @@ namespace Assets.Scripts
         {
             if (_fortification != null)
             {
-                _fortification.PlaceFortification(type);
+                _fortification.SetType(type);
             }
             else
             {
@@ -64,14 +64,17 @@ namespace Assets.Scripts
             GameBoard.DrawSquare(UL, UR, LL, LR, color);
         }
 
-        private void DrawFortification()
+        private void DrawFortification(bool debug=false)
         {
-            if (_fortification != null)
+            if (debug)
             {
-                if (_fortification.IsSet())
+                if (_fortification != null)
                 {
-                    Color color = _fortification.GetColor();
-                    GameBoard.DrawRect(_rect, color);
+                    if (_fortification.IsSet())
+                    {
+                        Color color = _fortification.GetColor();
+                        GameBoard.DrawRect(_rect, color);
+                    }
                 }
             }
         }
