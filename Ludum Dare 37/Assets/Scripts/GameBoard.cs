@@ -215,9 +215,15 @@ public class GameBoard : MonoBehaviour {
     private void OnGUI()
     {
         Rect drawPos = new Rect(0, 0, 100, 50);
-        GUI.Label(drawPos, string.Format("SELECTED TYPE: {0}", _selectedFortificationType));
-
-        //Vector3 pos = getMouseWorldPos();
+        //GUI.Label(drawPos, string.Format("SELECTED TYPE: {0}", _selectedFortificationType));
+        
+        Vector3 pos = GetMouseWorldPos();
+        GameCell cell = GetGameCellOnWorldPos(pos);
+        if (cell != null)
+        {
+            Vector3 center = cell.getRect().center;
+            GUI.Label(drawPos, string.Format("CELL CENTER: {0:0.00}, {1:0.00}", center.x, center.y));
+        }
         //GUI.Label(drawPos, string.Format("MOUSE POS: {0:0.00}, {1:0.00}", pos.x, pos.y));
 
         //Rect rect = getBoardRect();

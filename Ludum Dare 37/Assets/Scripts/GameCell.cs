@@ -8,6 +8,7 @@ namespace Assets.Scripts
         private int _y;
         private Vector2 _dim;
         private Rect _rect;
+        public Rect getRect() { return _rect; }
 
         private Fortification _fortification = null;
         public Fortification GetFortification() { return _fortification; }
@@ -20,7 +21,7 @@ namespace Assets.Scripts
             }
             else
             {
-                _fortification = new Fortification(type);
+                _fortification = new Fortification(type, _rect.center);
             }
         }
 
@@ -31,7 +32,7 @@ namespace Assets.Scripts
                 _fortification.RemoveFortification();
             }
         }
-
+        
         public GameCell(Vector2 origin, int x, int y, Vector2 dim)
         {
             _x = x;

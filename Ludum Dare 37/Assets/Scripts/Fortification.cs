@@ -16,15 +16,20 @@ namespace Assets.Scripts
         private Type _type = Type.NONE;
         public new Type GetType() { return _type; }
         private GameObject _go = null;
-
+        private Vector3 _pos;
+        
         public bool IsSet()
         {
             return (_type != Type.NONE);
         }
 
-        public Fortification(Type type)
+        public Fortification(Type type, Vector3 pos)
         {
+        
             SetType(type);
+            _pos = pos;
+            Debug.Log(_pos);
+
         }
 
         public void PlaceFortification(Type type)
@@ -46,7 +51,10 @@ namespace Assets.Scripts
                 }
             }
 
-            //_go = GetPrefab(type);
+
+            _go = GetPrefab(type);
+            _go.gameObject.transform.position = _pos;
+            //Debug.Log(_cell.getRect().center);
             _type = type;
         }
 
@@ -61,7 +69,7 @@ namespace Assets.Scripts
                 _type = Type.NONE;
             }
         }
-
+        
         //@TEMP: Until we get SpriteRenderers going...
         public Color GetColor()
         {
@@ -91,7 +99,7 @@ namespace Assets.Scripts
                 case Type.TOWER1:
                     return (GameObject)GameObject.Instantiate(Resources.Load("spirit_gen"));
                 case Type.TOWER2:
-                    return (GameObject)GameObject.Instantiate(Resources.Load("coal_shot"));
+                    return (GameObject)GameObject.Instantiate(Resources.Load("coal_elf"));
                 case Type.TOWER3:
                     return (GameObject)GameObject.Instantiate(Resources.Load("mine"));
                 case Type.TOWER4:
