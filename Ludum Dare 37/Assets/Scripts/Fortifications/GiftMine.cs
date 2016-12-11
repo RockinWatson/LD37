@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GiftMine : MonoBehaviour {
+public class GiftMine : BaseFortification {
 
     [SerializeField]
     private int _damage = 10;

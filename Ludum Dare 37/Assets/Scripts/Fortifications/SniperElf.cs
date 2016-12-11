@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SniperElf : MonoBehaviour
+public class SniperElf : BaseFortification
 {
     [SerializeField]
     private Transform _shotOrigin;

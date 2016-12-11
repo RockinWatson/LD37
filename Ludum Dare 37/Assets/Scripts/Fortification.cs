@@ -17,6 +17,7 @@ namespace Assets.Scripts
         public new Type GetType() { return _type; }
         private GameObject _go = null;
         private Vector3 _pos;
+        public Vector3 GetPos() { return _pos; }
         
         public bool IsSet()
         {
@@ -94,6 +95,28 @@ namespace Assets.Scripts
                 default:
                     Debug.LogError("ERROR!: We don't recognize your authority heeeyah. This type is fucked.");
                     return null;
+            }
+        }
+
+        public bool IsAttackable()
+        {
+            //@NOTE: All are attackable except Gift Mine.
+            return (_type != Type.TOWER3);
+        }
+
+        public void TakeDamage(int damage)
+        {
+            if (IsAttackable())
+            {
+                if (_go != null)
+                {
+                    BaseFortification fort = _go.GetComponent<BaseFortification>();
+                    if (fort.TakeDamage(damage))
+                    {
+                        //@TODO: Maybe signal destruction to allow for animation state, etc.
+                        RemoveFortification();
+                    }
+                }
             }
         }
     }

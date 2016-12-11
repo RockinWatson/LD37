@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts;
 
 public class Enemy : MonoBehaviour {
 
@@ -10,14 +11,40 @@ public class Enemy : MonoBehaviour {
     private float _speed = 0.5f;
     [SerializeField]
     private int _damage = 5;
+    [SerializeField]
+    private float _attackSpeed = 3.0f;
+    private float _attackTimer = 0.0f;
+
+    [SerializeField]
+    private float _stoppingDistanceToObstacle = 1.0f;
 
     private bool canMove = true;
 
+    private void Start()
+    {
+        _attackTimer = 0.0f;
+    }
+
     private void Update()
     {
-        if (canMove)
+        Fortification fort = CheckForObstacle();
+        if (fort != null)
         {
-            transform.Translate(Vector2.right * _speed * Time.deltaTime);
+            // Try to do damage to it.
+            if (_attackTimer >= _attackSpeed)
+            {
+                fort.TakeDamage(_damage);
+                _attackSpeed = 0.0f;
+            }
+            _attackSpeed += Time.deltaTime;
+        }
+        else
+        {
+            _attackSpeed = 0.0f;
+            if (canMove)
+            {
+                transform.Translate(Vector2.right * _speed * Time.deltaTime);
+            }
         }
     }
 
@@ -37,6 +64,39 @@ public class Enemy : MonoBehaviour {
         if (_health < 0)
         {
             GameObject.Destroy(this.gameObject);
+        }
+    }
+
+    private Fortification CheckForObstacle()
+    {
+        GameCell cell = GameBoard.Get().GetGameCellRightOfPos(transform.position);
+        if (cell != null)
+        {
+            // Debug draw the cell we're focused on:
+            //cell.Draw(true);
+
+            Fortification fort = cell.GetFortification();
+            if (fort != null && fort.IsSet() && fort.IsAttackable())
+            {
+                Vector3 fortPos = fort.GetPos();
+                float sqrMag = (fortPos - transform.position).sqrMagnitude;
+                if (sqrMag <= Mathf.Pow(_stoppingDistanceToObstacle, 2.0f))
+                {
+                    return fort;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
+        else
+        {
+            return null;
         }
     }
 }

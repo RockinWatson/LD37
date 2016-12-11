@@ -169,7 +169,8 @@ public class GameBoard : MonoBehaviour {
 
             //Debug.Log("CONTAINS!");
             int xIndex = Mathf.FloorToInt((pos.x - realXMin) / (realXMax - realXMin) * _width);
-            int yIndex = _board.Count - Mathf.FloorToInt((pos.y - realYMin) / (realYMax - realYMin) * _height) - 1;
+            //int yIndex = _board.Count - Mathf.FloorToInt((pos.y - realYMin) / (realYMax - realYMin) * _height) - 1;
+            int yIndex = GetRowIndexOnWorldPos(pos);
 
             //Debug.Log(string.Format("{0} {1}", xIndex, yIndex));
             return _board[yIndex][xIndex];
@@ -177,6 +178,65 @@ public class GameBoard : MonoBehaviour {
         else
         {
             return null;
+        }
+    }
+
+    private bool IsCellPosValid(Vector2 pos)
+    {
+        return (0 <= pos.x && pos.x < _width &&
+            0 <= pos.y && pos.y < _height);
+    }
+
+    public GameCell GetGameCellOnCellPos(Vector2 pos)
+    {
+        if (IsCellPosValid(pos))
+        {
+            return _board[Mathf.FloorToInt(pos.y)][Mathf.FloorToInt(pos.x)];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public int GetRowIndexOnWorldPos(Vector3 pos)
+    {
+        Rect boardRect = getBoardRect();
+        float yMin = Mathf.Min(boardRect.yMin, boardRect.yMax);
+        float yMax = Mathf.Max(boardRect.yMin, boardRect.yMax);
+        if (yMin < pos.y && pos.y < yMax)
+        {
+            int yIndex = _board.Count - Mathf.FloorToInt((pos.y - yMin) / (yMax - yMin) * _height) - 1;
+            return yIndex;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+
+    public GameCell GetGameCellRightOfPos(Vector3 pos)
+    {
+        GameCell cell = GetGameCellOnWorldPos(pos);
+        if (cell != null)
+        {
+            Vector2 cellPos = cell.GetCellPos();
+            cellPos.x += 1;
+            return GetGameCellOnCellPos(cellPos);
+        }
+        else
+        {
+            //@TODO: Based on position, find the proper row... then retrieve the first in the row.
+            int rowIndex = GetRowIndexOnWorldPos(pos);
+            if (rowIndex != -1)
+            {
+                Vector2 cellPos = new Vector2(0, rowIndex);
+                return GetGameCellOnCellPos(cellPos);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 

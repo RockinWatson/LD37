@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpiritGenerator : MonoBehaviour
+public class SpiritGenerator : BaseFortification
 {
     [SerializeField]
     private Transform _spiritOrigin;

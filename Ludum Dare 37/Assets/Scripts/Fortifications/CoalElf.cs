@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoalElf : MonoBehaviour {
+public class CoalElf : BaseFortification {
 
     [SerializeField]
     private Transform _shotOrigin;

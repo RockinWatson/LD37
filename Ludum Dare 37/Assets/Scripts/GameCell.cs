@@ -4,8 +4,8 @@ namespace Assets.Scripts
 {
     public class GameCell
     {
-        private int _x;
-        private int _y;
+        private Vector2 _cellPos;
+        public Vector2 GetCellPos() { return _cellPos; }
         private Vector2 _dim;
         private Rect _rect;
         public Rect getRect() { return _rect; }
@@ -35,11 +35,11 @@ namespace Assets.Scripts
         
         public GameCell(Vector2 origin, int x, int y, Vector2 dim)
         {
-            _x = x;
-            _y = y;
+            _cellPos.x = x;
+            _cellPos.y = y;
             _dim = dim;
 
-            Vector2 pos = origin + new Vector2(_x * _dim.x, _y * -_dim.y);
+            Vector2 pos = origin + new Vector2(_cellPos.x * _dim.x, _cellPos.y * -_dim.y);
             _rect = new Rect(pos, new Vector2(_dim.x, -_dim.y));
         }
 
