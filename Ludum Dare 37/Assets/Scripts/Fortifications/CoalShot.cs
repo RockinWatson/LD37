@@ -43,4 +43,9 @@ public class CoalShot : MonoBehaviour {
             GameBoard.Destroy(this.gameObject);
         }
     }
+
+    private void OnBecameInvisible()
+    {
+        GameBoard.Destroy(this.gameObject);
+    }
 }
