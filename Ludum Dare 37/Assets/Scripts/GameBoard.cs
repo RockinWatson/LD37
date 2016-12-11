@@ -20,12 +20,17 @@ public class GameBoard : MonoBehaviour {
     // Row[1]: [0] [1] [2] [3]
     private List<List<GameCell>> _board = null;
 
-    private Fortification.Type _selectedFortificationType = Fortification.Type.TOWER1;
+    private Fortification.Type _selectedFortificationType = Fortification.Type.NONE;
+
+    private int _score = 0;
+
+    static private GameBoard _singleton = null;
     #endregion
 
     #region Create Board
     private void Awake()
     {
+        _singleton = this;
         CreateBoard();
     }
 
@@ -45,6 +50,11 @@ public class GameBoard : MonoBehaviour {
     }
     #endregion
 
+    static public GameBoard Get()
+    {
+        return _singleton;
+    }
+
     private void Update()
     {
         DrawBoard();
@@ -54,7 +64,7 @@ public class GameBoard : MonoBehaviour {
         UpdatePlayerKeyInput();
     }
 
-    private Vector3 GetMouseWorldPos()
+    static public Vector3 GetMouseWorldPos()
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = 0;
@@ -82,7 +92,11 @@ public class GameBoard : MonoBehaviour {
                 }
                 else
                 {
-                    cell.SetFortification(_selectedFortificationType);
+                    if (_selectedFortificationType != Fortification.Type.NONE)
+                    {
+                        cell.SetFortification(_selectedFortificationType);
+                        _selectedFortificationType = Fortification.Type.NONE;
+                    }
                 }
             }
             else
@@ -211,18 +225,39 @@ public class GameBoard : MonoBehaviour {
         //Debug.DrawRay(LR, Vector3.right * 3, Color.cyan);
     }
 
+    // This will probably move somewhere more appropriate?
+    #region Score
+    public void AddScore(int score)
+    {
+        _score += score;
+    }
+    public bool SpendScore(int score)
+    {
+        if (_score < score)
+        {
+            return false;
+        }
+        else
+        {
+            _score -= score;
+            return true;
+        }
+    }
+    #endregion Score
+
     private void OnGUI()
     {
         Rect drawPos = new Rect(0, 0, 100, 50);
+        GUI.Label(drawPos, string.Format("SCORE: {0}", _score));
         //GUI.Label(drawPos, string.Format("SELECTED TYPE: {0}", _selectedFortificationType));
         
-        Vector3 pos = GetMouseWorldPos();
-        GameCell cell = GetGameCellOnWorldPos(pos);
-        if (cell != null)
-        {
-            Vector3 center = cell.getRect().center;
-            GUI.Label(drawPos, string.Format("CELL CENTER: {0:0.00}, {1:0.00}", center.x, center.y));
-        }
+        //Vector3 pos = GetMouseWorldPos();
+        //GameCell cell = GetGameCellOnWorldPos(pos);
+        //if (cell != null)
+        //{
+        //    Vector3 center = cell.getRect().center;
+        //    GUI.Label(drawPos, string.Format("CELL CENTER: {0:0.00}, {1:0.00}", center.x, center.y));
+        //}
         //GUI.Label(drawPos, string.Format("MOUSE POS: {0:0.00}, {1:0.00}", pos.x, pos.y));
 
         //Rect rect = getBoardRect();
