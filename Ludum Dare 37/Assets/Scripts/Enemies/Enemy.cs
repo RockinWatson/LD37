@@ -4,14 +4,39 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public int _health;
-    public int _speed;
-    public int _damage;
+    [SerializeField]
+    private int _health = 5;
+    [SerializeField]
+    private float _speed = 0.5f;
+    [SerializeField]
+    private int _damage = 5;
 
-    public Enemy(int health, int speed, int damage)
+    private bool canMove = true;
+
+    private void Update()
     {
-        _health = health;
-        _speed = speed;
-        _damage = damage;
+        if (canMove)
+        {
+            transform.Translate(Vector2.right * _speed * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D obj)
+    {
+        if (obj.gameObject.name == "EnemyStopper")
+        {
+            transform.Translate(new Vector3(0, 0, 0));
+            canMove = false;
+            Debug.Log("Hitten Dat Stopper");
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        _health -= damage;
+        if (_health < 0)
+        {
+            GameObject.Destroy(this.gameObject);
+        }
     }
 }

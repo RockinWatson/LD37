@@ -12,7 +12,7 @@ namespace Assets.Scripts.Enemies
 
         IEnumerator SpawnObject(int index, float seconds)
         {
-            Debug.Log("Waiting for " + seconds + " seconds");
+            //Debug.Log("Waiting for " + seconds + " seconds");
 
             yield return new WaitForSeconds(seconds);
             Instantiate(enemies[index], transform.position, transform.rotation);
