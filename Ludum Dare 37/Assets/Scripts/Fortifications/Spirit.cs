@@ -44,6 +44,7 @@ public class Spirit : MonoBehaviour {
 
     private void Update()
     {
+        
         switch (_state)
         {
             case State.MOVE_TO_DESTINATION:
@@ -93,14 +94,19 @@ public class Spirit : MonoBehaviour {
 
     public void Activate()
     {
+        //Play Pickup Audio
+        var spirit_audio = GameObject.Find("AudioController");
+        spirit_audio.GetComponent<AudioController>().Spirit_Audio();
+
         GameBoard.Get().AddScore(_score);
-        GameObject.Destroy(this.gameObject);
+        GameObject.Destroy(this.gameObject);        
     }
 
     private void OnMouseDown()
     {
         if (_state == State.FIXED)
         {
+            
             Activate();
         }
     }
