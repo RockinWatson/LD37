@@ -1,12 +1,11 @@
-﻿using Assets.Scripts.Utilities;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PolarBear : MonoBehaviour {
+public class Ghost : MonoBehaviour {
 
     [SerializeField]
     private int _health = 5;
     [SerializeField]
-    private int _speed = 1;
+    private float _speed = 1;
     [SerializeField]
     private int _damage = 5;
 
