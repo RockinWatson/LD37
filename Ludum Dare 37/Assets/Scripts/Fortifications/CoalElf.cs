@@ -15,7 +15,13 @@ public class CoalElf : BaseFortification {
 	private void Start ()
     {
         _timer = 0.0f;
-	}
+
+        
+        //Audio Effect
+        var create_audio = GameObject.Find("coal_elf(Clone)");
+        create_audio.GetComponent<ElfAudio1>().Creation_Audio();
+    
+    }
 	
 	// Update is called once per frame
 	private void Update ()
