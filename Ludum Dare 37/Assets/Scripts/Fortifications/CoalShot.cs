@@ -8,7 +8,7 @@ public class CoalShot : MonoBehaviour {
     const float _speed = 1.0f;
 
     [SerializeField]
-    const int _damage = 3;
+    const int _damage = 2;
 
     [SerializeField]
     const float _spinSpeed = 100.0f;

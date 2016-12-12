@@ -34,7 +34,7 @@ public class GameBoard : MonoBehaviour {
     private static int currentDay;
     public static bool _levelOver = false;
 
-    public static float _globalTimer = 50;
+    public static float _globalTimer = 400;
 
     static private GameBoard _singleton = null;
     #endregion
@@ -128,23 +128,23 @@ public class GameBoard : MonoBehaviour {
 
     public static int GetCurrentDay()
     {
-        if (_globalTimer <= 50)
+        if (_globalTimer <= 400)
         {
            currentDay = (int)Days.DayFive;
         }
-        if (_globalTimer <= 40)
+        if (_globalTimer <= 350)
         {
             currentDay = (int)Days.DayFour;
         }
-        if (_globalTimer <= 30)
+        if (_globalTimer <= 275)
         {
             currentDay = (int)Days.DayThree;
         }
-        if (_globalTimer <= 20)
+        if (_globalTimer <= 200)
         {
             currentDay = (int)Days.DayTwo;
         }
-        if (_globalTimer <= 10)
+        if (_globalTimer <= 100)
         {
             currentDay = (int)Days.DayOne;
         }
@@ -157,19 +157,19 @@ public class GameBoard : MonoBehaviour {
 
     public static bool IsLevelOver()
     {
-        if ((int)_globalTimer == 40)
+        if ((int)_globalTimer == 350)
         {
             _levelOver = true;
         }
-        if ((int)_globalTimer == 30)
+        if ((int)_globalTimer == 275)
         {
             _levelOver = true;
         }
-        if ((int)_globalTimer == 20)
+        if ((int)_globalTimer == 200)
         {
             _levelOver = true;
         }
-        if ((int)_globalTimer == 10)
+        if ((int)_globalTimer == 100)
         {
             _levelOver = true;
         }

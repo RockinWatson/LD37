@@ -14,8 +14,10 @@ public class EmitterLine : MonoBehaviour {
 
     [SerializeField]
     public float _timeMin = 5.0f;
+
     [SerializeField]
     public float _timeMax = 15.0f;
+
 
     private float _timeToEmit;
     private float _timer = 0;

@@ -17,7 +17,7 @@ public class CoalElf : BaseFortification {
         _timer = 0.0f;
 
         
-        //Audio Effect
+        //Build Audio
         var create_audio = GameObject.Find("coal_elf(Clone)");
         create_audio.GetComponent<ElfAudio1>().Creation_Audio();
     

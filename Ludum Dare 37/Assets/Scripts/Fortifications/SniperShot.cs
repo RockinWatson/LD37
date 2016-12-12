@@ -8,7 +8,7 @@ public class SniperShot : MonoBehaviour
     const float _speed = 2.0f;
 
     [SerializeField]
-    const int _damage = 5;
+    const int _damage = 6;
 
     public void Initialize(Vector3 origin)
     {
