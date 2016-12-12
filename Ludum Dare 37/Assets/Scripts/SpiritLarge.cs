@@ -13,8 +13,6 @@ public class SpiritLarge : MonoBehaviour {
     private void Update()
     {
         MoveDown();
-
-        //@TODO: Figure out when to delete the Spirit (off-screen, etc.)
     }
 
     private void MoveDown()

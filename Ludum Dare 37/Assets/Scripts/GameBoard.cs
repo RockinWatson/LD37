@@ -116,6 +116,11 @@ public class GameBoard : MonoBehaviour {
         }
     }
 
+    public void SetSelectedFortificationType(Fortification.Type type)
+    {
+        _selectedFortificationType = type;
+    }
+
     private void UpdatePlayerKeyInput()
     {
         //@TEMP: Mostly TEMP / DEBUG to set Fortification Types quickly.
