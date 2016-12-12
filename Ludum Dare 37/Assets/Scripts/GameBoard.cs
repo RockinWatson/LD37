@@ -87,6 +87,26 @@ public class GameBoard : MonoBehaviour {
         return (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift));
     }
 
+    private int GetCostOfFortification(Fortification.Type type)
+    {
+        switch (type)
+        {
+            case Fortification.Type.TOWER1:
+                return 5;
+            case Fortification.Type.TOWER2:
+                return 10;
+            case Fortification.Type.TOWER3:
+                return 15;
+            case Fortification.Type.TOWER4:
+                return 20;
+            case Fortification.Type.TOWER5:
+                return 25;
+            default:
+                Debug.LogError("UNRECOGNIZED TYPE!");
+                return 0;
+        }
+    }
+
     private void UpdatePlayerMouse()
     {
         Vector3 pos = GetMouseWorldPos();
@@ -105,10 +125,16 @@ public class GameBoard : MonoBehaviour {
                 {
                     if (_selectedFortificationType != Fortification.Type.NONE)
                     {
-                        DestroyPreviewFortification();
+                        int cost = GetCostOfFortification(_selectedFortificationType);
+                        if (cost <= _score)
+                        {
+                            _score -= cost;
+                            DestroyPreviewFortification();
 
-                        cell.SetFortification(_selectedFortificationType);
-                        _selectedFortificationType = Fortification.Type.NONE;
+                            //@TODO: Pay for the shit.
+                            cell.SetFortification(_selectedFortificationType);
+                            _selectedFortificationType = Fortification.Type.NONE;
+                        }
                     }
                 }
             }
@@ -176,6 +202,11 @@ public class GameBoard : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             _selectedFortificationType = Fortification.Type.TOWER5;
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            DestroyAllFortifications();
         }
     }
 
@@ -376,5 +407,25 @@ public class GameBoard : MonoBehaviour {
         //GUI.Label(drawPos, string.Format("RECT UL POS: {0:0.00}, {1:0.00}", rect.min.x, rect.min.y));
         //drawPos.y += 50;
         //GUI.Label(drawPos, string.Format("RECT LR POS: {0:0.00}, {1:0.00}", rect.max.x, rect.max.y));
+    }
+
+    private void DestroyAllFortifications()
+    {
+        for (int i = 0; i < _board.Count; ++i)
+        {
+            List<GameCell> row = _board[i];
+            for (int j = 0; j < row.Count; ++j)
+            {
+                GameCell cell = row[j];
+                Fortification fort = cell.GetFortification();
+                if (fort != null && fort.IsSet())
+                {
+                    fort.RemoveFortification();
+                }
+            }
+        }
+
+        // Clear preview.
+        DestroyPreviewFortification();
     }
 }

@@ -5,10 +5,10 @@ using UnityEngine;
 public class Snowflake : MonoBehaviour {
 
     [SerializeField]
-    const float _speed = 1.0f;
+    float _speed = 1.0f;
 
     [SerializeField]
-    const float _spinSpeed = 50.0f;
+    float _spinSpeed = 50.0f;
 	
 	// Update is called once per frame
 	void Update ()
