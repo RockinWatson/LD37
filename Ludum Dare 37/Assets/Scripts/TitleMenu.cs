@@ -4,7 +4,7 @@ namespace Assets.Scripts
 {
     class TitleMenu : MonoBehaviour
     {
-        private float _timer = 9f;
+        private float _timer = 30f;
 
         public GameObject[] _elves;
         public GameObject[] _santaurs;
@@ -18,16 +18,16 @@ namespace Assets.Scripts
 
         void FixedUpdate()
         {
-            if ((int)_timer == 6)
+            if ((int)_timer == 20)
             {
                 Destroy(_elves[0]);
             }
-            if ((int)_timer == 3)
+            if ((int)_timer == 10)
             {
                 Destroy(_elves[1]);
                 SantaurHead();
             }
-            if ((int)_timer == 0)
+            if ((int)_timer == 5)
             {
                 Destroy(GameObject.FindGameObjectWithTag("SantaurSpeech1"));
             }
