@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: de900399c647931479dfb569c2d074bf
+timeCreated: 1481517406
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: deathexplosion_000
+    21300002: deathexplosion_001
+    21300004: deathexplosion_002
+    21300006: deathexplosion_003
+    21300008: deathexplosion_004
+    21300010: deathexplosion_005
+    21300012: deathexplosion_006
+    21300014: deathexplosion_007
+    21300016: deathexplosion_008
+    21300018: deathexplosion_009
+    21300020: deathexplosion_010
+    21300022: deathexplosion_011
+    21300024: deathexplosion_012
+    21300026: deathexplosion_013
+    21300028: deathexplosion_014
+    21300030: deathexplosion_015
+    21300032: deathexplosion_016
+    21300034: deathexplosion_017
+    21300036: deathexplosion_018
+    21300038: deathexplosion_019
+    21300040: deathexplosion_020
+    21300042: deathexplosion_021
+    21300044: deathexplosion_022
+    21300046: deathexplosion_023
+    21300048: deathexplosion_024
+    21300050: deathexplosion_025
+    21300052: deathexplosion_026
+    21300054: deathexplosion_027
+    21300056: deathexplosion_028
+    21300058: deathexplosion_029
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: deathexplosion_000
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 602
+        width: 36
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5555556, y: 0.8214286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_001
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 772
+        width: 34
+        height: 44
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.54545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_002
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 511
+        width: 57
+        height: 67
+      alignment: 9
+      pivot: {x: 0.57894737, y: 0.5074627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_003
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 526
+        width: 65
+        height: 59
+      alignment: 9
+      pivot: {x: 0.64615387, y: 0.5762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_004
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 532
+        width: 69
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5362319, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_005
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 454
+        width: 53
+        height: 55
+      alignment: 9
+      pivot: {x: 0.49056605, y: 0.6181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_006
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 587
+        width: 53
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5660377, y: 0.63793105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_007
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 647
+        width: 54
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5740741, y: 0.6315789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_008
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 465
+        width: 59
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5762712, y: 0.59322035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_009
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 509
+        width: 62
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5483871, y: 0.49275362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_010
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 463
+        width: 60
+        height: 67
+      alignment: 9
+      pivot: {x: 0.51666665, y: 0.58208954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 496
+        width: 74
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_012
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 580
+        width: 72
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5416667, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_013
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 757
+        width: 90
+        height: 75
+      alignment: 9
+      pivot: {x: 0.56666666, y: 0.5733333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_014
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 505
+        width: 89
+        height: 91
+      alignment: 9
+      pivot: {x: 0.53932583, y: 0.5824176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_015
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 834
+        width: 94
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5212766, y: 0.5591398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_016
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 596
+        width: 101
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5247525, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_017
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 576
+        width: 109
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5321101, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_018
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 929
+        width: 97
+        height: 94
+      alignment: 9
+      pivot: {x: 0.41237113, y: 0.5851064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_019
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 660
+        width: 107
+        height: 95
+      alignment: 9
+      pivot: {x: 0.41121495, y: 0.6210526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_020
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 805
+        width: 121
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5371901, y: 0.44230768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_021
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 911
+        width: 123
+        height: 112
+      alignment: 9
+      pivot: {x: 0.52845526, y: 0.45535713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 792
+        width: 133
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.46086955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_023
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 907
+        width: 140
+        height: 116
+      alignment: 9
+      pivot: {x: 0.50714284, y: 0.49137932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 909
+        width: 143
+        height: 114
+      alignment: 9
+      pivot: {x: 0.48251748, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_025
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 598
+        width: 112
+        height: 106
+      alignment: 9
+      pivot: {x: 0.36607143, y: 0.6037736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_026
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 706
+        width: 114
+        height: 110
+      alignment: 9
+      pivot: {x: 0.35964912, y: 0.6090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_027
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 698
+        width: 114
+        height: 105
+      alignment: 9
+      pivot: {x: 0.35964912, y: 0.63809526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_028
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 686
+        width: 113
+        height: 104
+      alignment: 9
+      pivot: {x: 0.3539823, y: 0.6442308}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: deathexplosion_029
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 818
+        width: 117
+        height: 87
+      alignment: 9
+      pivot: {x: 0.36752138, y: 0.6896552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

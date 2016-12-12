@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: ba7c9a7b5ae74e34bb7e5c2dd5b3a46c
+timeCreated: 1481515364
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bat_000
+    21300002: bat_001
+    21300004: bat_002
+    21300006: bat_003
+    21300008: bat_004
+    21300010: bat_005
+    21300012: bat_006
+    21300014: bat_007
+    21300016: bat_008
+    21300018: bat_009
+    21300020: bat_010
+    21300022: bat_011
+    21300024: bat_012
+    21300026: bat_013
+    21300028: bat_014
+    21300030: bat_015
+    21300032: bat_016
+    21300034: bat_017
+    21300036: bat_018
+    21300038: bat_019
+    21300040: bat_020
+    21300042: bat_021
+    21300044: bat_022
+    21300046: bat_023
+    21300048: bat_024
+    21300050: bat_025
+    21300052: bat_026
+    21300054: bat_027
+    21300056: bat_028
+    21300058: bat_029
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bat_000
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 729
+        width: 128
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5078125, y: 0.50714284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 503
+        width: 125
+        height: 68
+      alignment: 9
+      pivot: {x: 0.496, y: 0.4779412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_002
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 588
+        width: 118
+        height: 67
+      alignment: 9
+      pivot: {x: 0.4915254, y: 0.47014925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_003
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 799
+        width: 109
+        height: 76
+      alignment: 9
+      pivot: {x: 0.49541286, y: 0.53289473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 430
+        width: 116
+        height: 71
+      alignment: 9
+      pivot: {x: 0.54310346, y: 0.471831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_005
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 877
+        width: 112
+        height: 76
+      alignment: 9
+      pivot: {x: 0.54464287, y: 0.45394737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_006
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 499
+        width: 116
+        height: 71
+      alignment: 9
+      pivot: {x: 0.54310346, y: 0.45774648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_007
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 728
+        width: 118
+        height: 69
+      alignment: 9
+      pivot: {x: 0.48305085, y: 0.48550725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_008
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 651
+        width: 127
+        height: 76
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.5197368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 947
+        width: 130
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_010
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 572
+        width: 126
+        height: 77
+      alignment: 9
+      pivot: {x: 0.50793654, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 718
+        width: 128
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5078125, y: 0.46710527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_012
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 948
+        width: 130
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_013
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 801
+        width: 130
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.471831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_014
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 948
+        width: 130
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 796
+        width: 129
+        height: 74
+      alignment: 9
+      pivot: {x: 0.49612403, y: 0.5337838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_016
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 650
+        width: 127
+        height: 74
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.5472973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_017
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 647
+        width: 127
+        height: 69
+      alignment: 9
+      pivot: {x: 0.48818898, y: 0.51449275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_018
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 574
+        width: 126
+        height: 74
+      alignment: 9
+      pivot: {x: 0.4920635, y: 0.5608108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_019
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 516
+        width: 117
+        height: 70
+      alignment: 9
+      pivot: {x: 0.4957265, y: 0.5214286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_020
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 955
+        width: 113
+        height: 68
+      alignment: 9
+      pivot: {x: 0.4778761, y: 0.52205884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_021
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 657
+        width: 119
+        height: 69
+      alignment: 9
+      pivot: {x: 0.46218488, y: 0.51449275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_022
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 445
+        width: 108
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49074075, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_023
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 496
+        width: 125
+        height: 76
+      alignment: 9
+      pivot: {x: 0.504, y: 0.54605263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_024
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 874
+        width: 130
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5069444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_025
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 573
+        width: 126
+        height: 72
+      alignment: 9
+      pivot: {x: 0.50793654, y: 0.47916666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_026
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 726
+        width: 129
+        height: 74
+      alignment: 9
+      pivot: {x: 0.503876, y: 0.4527027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_027
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 802
+        width: 130
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4710145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_028
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 873
+        width: 130
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48630136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bat_029
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 872
+        width: 130
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48630136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
