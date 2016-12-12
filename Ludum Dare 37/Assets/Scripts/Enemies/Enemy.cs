@@ -34,13 +34,13 @@ public class Enemy : MonoBehaviour {
             if (_attackTimer >= _attackSpeed)
             {
                 fort.TakeDamage(_damage);
-                _attackSpeed = 0.0f;
+                _attackTimer = 0.0f;
             }
-            _attackSpeed += Time.deltaTime;
+            _attackTimer += Time.deltaTime;
         }
         else
         {
-            _attackSpeed = 0.0f;
+            _attackTimer = 0.0f;
             if (canMove)
             {
                 transform.Translate(Vector2.right * _speed * Time.deltaTime);
