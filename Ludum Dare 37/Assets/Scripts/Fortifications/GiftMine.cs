@@ -9,6 +9,14 @@ public class GiftMine : BaseFortification {
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        if (CanUpdate())
+        {
+            AttemptCollideWithEnemy(col);
+        }
+    }
+
+    private void AttemptCollideWithEnemy(Collision2D col)
+    {
         Enemy enemy = col.gameObject.GetComponent<Enemy>();
         if (enemy != null)
         {
@@ -20,5 +28,10 @@ public class GiftMine : BaseFortification {
             enemy.TakeDamage(_damage);
             GameBoard.Destroy(this.gameObject);
         }
+    }
+
+    public override bool IsAttackable()
+    {
+        return false;
     }
 }

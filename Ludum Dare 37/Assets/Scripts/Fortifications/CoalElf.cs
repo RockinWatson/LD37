@@ -20,7 +20,10 @@ public class CoalElf : BaseFortification {
 	// Update is called once per frame
 	private void Update ()
     {
-        UpdateCoalShot();
+        if (CanUpdate())
+        {
+            UpdateCoalShot();
+        }
 	}
 
     private void UpdateCoalShot()

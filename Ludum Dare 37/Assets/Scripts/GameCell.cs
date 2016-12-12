@@ -32,6 +32,11 @@ namespace Assets.Scripts
                 _fortification.RemoveFortification();
             }
         }
+
+        public void SetPreviewFortification(BaseFortification preview)
+        {
+            preview.transform.position = _rect.center;
+        }
         
         public GameCell(Vector2 origin, int x, int y, Vector2 dim)
         {

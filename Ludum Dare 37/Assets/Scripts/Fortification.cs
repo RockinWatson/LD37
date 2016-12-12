@@ -15,7 +15,7 @@ namespace Assets.Scripts
         };
         private Type _type = Type.NONE;
         public new Type GetType() { return _type; }
-        private GameObject _go = null;
+        private BaseFortification _fort = null;
         private Vector3 _pos;
         public Vector3 GetPos() { return _pos; }
         
@@ -34,8 +34,8 @@ namespace Assets.Scripts
         {
             if (!IsSet())
             {
-                _go = GetPrefab(type);
-                _go.gameObject.transform.position = _pos;
+                _fort = GetPrefab(type);
+                _fort.gameObject.transform.position = _pos;
                 _type = type;
             }
             else
@@ -48,9 +48,9 @@ namespace Assets.Scripts
         {
             if (IsSet())
             {
-                if (_go != null)
+                if (_fort != null)
                 {
-                    GameObject.Destroy(_go);
+                    GameObject.Destroy(_fort.gameObject);
                 }
                 _type = Type.NONE;
             }
@@ -78,44 +78,55 @@ namespace Assets.Scripts
         }
 
         //@NOTE: Used to retrieve Prefab of the logic contained within the Fortification - e.g., Elf Sniper's game code, Mine behavior, etc etc.
-        static public GameObject GetPrefab(Type type)
+        static public BaseFortification GetPrefab(Type type)
         {
+            GameObject go = null;
+
             switch (type)
             {
                 case Type.TOWER1:
-                    return (GameObject)GameObject.Instantiate(Resources.Load("spirit_gen"));
+                    go = (GameObject)GameObject.Instantiate(Resources.Load("spirit_gen"));
+                    break;
                 case Type.TOWER2:
-                    return (GameObject)GameObject.Instantiate(Resources.Load("coal_elf"));
+                    go = (GameObject)GameObject.Instantiate(Resources.Load("coal_elf"));
+                    break;
                 case Type.TOWER3:
-                    return (GameObject)GameObject.Instantiate(Resources.Load("mine"));
+                    go = (GameObject)GameObject.Instantiate(Resources.Load("mine"));
+                    break;
                 case Type.TOWER4:
-                    return (GameObject)GameObject.Instantiate(Resources.Load("elf_sniper"));
+                    go = (GameObject)GameObject.Instantiate(Resources.Load("elf_sniper"));
+                    break;
                 case Type.TOWER5:
-                    return (GameObject)GameObject.Instantiate(Resources.Load("candy_cane"));
+                    go = (GameObject)GameObject.Instantiate(Resources.Load("candy_cane"));
+                    break;
                 default:
                     Debug.LogError("ERROR!: We don't recognize your authority heeeyah. This type is fucked.");
                     return null;
             }
+
+            return go.GetComponent<BaseFortification>();
+        }
+
+        static public BaseFortification GetPreviewPrefab(Type type)
+        {
+            BaseFortification preview = GetPrefab(type);
+            preview.SetPreview();
+            return preview;
         }
 
         public bool IsAttackable()
         {
-            //@NOTE: All are attackable except Gift Mine.
-            return (_type != Type.TOWER3);
+            return (IsSet() && _fort != null && _fort.IsAttackable());
         }
 
         public void TakeDamage(int damage)
         {
             if (IsAttackable())
             {
-                if (_go != null)
+                if (_fort.TakeDamage(damage))
                 {
-                    BaseFortification fort = _go.GetComponent<BaseFortification>();
-                    if (fort.TakeDamage(damage))
-                    {
-                        //@TODO: Maybe signal destruction to allow for animation state, etc.
-                        RemoveFortification();
-                    }
+                    //@TODO: Maybe signal destruction to allow for animation state, etc.
+                    RemoveFortification();
                 }
             }
         }

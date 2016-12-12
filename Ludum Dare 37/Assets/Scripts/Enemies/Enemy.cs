@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour {
             //cell.Draw(true);
 
             Fortification fort = cell.GetFortification();
-            if (fort != null && fort.IsSet() && fort.IsAttackable())
+            if (fort != null && fort.IsAttackable())
             {
                 Vector3 fortPos = fort.GetPos();
                 float sqrMag = (fortPos - transform.position).sqrMagnitude;

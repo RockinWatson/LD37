@@ -22,6 +22,7 @@ public class GameBoard : MonoBehaviour {
     private List<List<GameCell>> _board = null;
 
     private Fortification.Type _selectedFortificationType = Fortification.Type.NONE;
+    private BaseFortification _previewFortification = null;
 
     private int _score = 0;
     public Text _scoreText;
@@ -104,6 +105,8 @@ public class GameBoard : MonoBehaviour {
                 {
                     if (_selectedFortificationType != Fortification.Type.NONE)
                     {
+                        DestroyPreviewFortification();
+
                         cell.SetFortification(_selectedFortificationType);
                         _selectedFortificationType = Fortification.Type.NONE;
                     }
@@ -112,13 +115,43 @@ public class GameBoard : MonoBehaviour {
             else
             {
                 //cell.Draw(true);
+
+                // Update potential preview...
+                if (_previewFortification != null)
+                {
+                    cell.SetPreviewFortification(_previewFortification);
+                }
             }
         }
     }
 
     public void SetSelectedFortificationType(Fortification.Type type)
     {
-        _selectedFortificationType = type;
+        if (_selectedFortificationType != type)
+        {
+            _selectedFortificationType = type;
+
+            CreatePreviewFortification(type);
+
+        }
+    }
+
+    private void CreatePreviewFortification(Fortification.Type type)
+    {
+        DestroyPreviewFortification();
+        _previewFortification = Fortification.GetPreviewPrefab(type);
+
+        Vector3 mousePos = GetMouseWorldPos();
+        GameCell nearestCell = GetGameCellOnWorldPos(mousePos, true);
+        nearestCell.SetPreviewFortification(_previewFortification);
+    }
+
+    private void DestroyPreviewFortification()
+    {
+        if (_previewFortification != null)
+        {
+            GameObject.Destroy(_previewFortification.gameObject);
+        }
     }
 
     private void UpdatePlayerKeyInput()
@@ -161,8 +194,8 @@ public class GameBoard : MonoBehaviour {
         float xMax = Mathf.Max(rect.min.x, rect.max.x);
         float yMin = Mathf.Min(rect.min.y, rect.max.y);
         float yMax = Mathf.Max(rect.min.y, rect.max.y);
-        return (xMin < pos.x && pos.x < xMax &&
-            yMin < pos.y && pos.y < yMax);
+        return (xMin <= pos.x && pos.x <= xMax &&
+            yMin <= pos.y && pos.y <= yMax);
     }
 
     private Rect getBoardRect()
@@ -170,17 +203,20 @@ public class GameBoard : MonoBehaviour {
         return new Rect(_origin.position.x, _origin.position.y, _dim.x * _width, _dim.y * -_height);
     }
 
-    public GameCell GetGameCellOnWorldPos(Vector3 pos)
+    public GameCell GetGameCellOnWorldPos(Vector3 pos, bool nearest=false)
     {
         Rect boardRect = getBoardRect();
         //DrawRect(boardRect, Color.magenta, false);
         //if (boardRect.Contains(pos))
-        if (myRectContainsPoint(boardRect, pos))
+        if (myRectContainsPoint(boardRect, pos) || nearest)
         {
             float realXMin = boardRect.xMin;
             float realYMin = boardRect.yMax;
             float realXMax = boardRect.xMax;
             float realYMax = boardRect.yMin;
+
+            pos.x = Mathf.Clamp(pos.x, realXMin, realXMax);
+            pos.y = Mathf.Clamp(pos.y, realYMin, realYMax);
 
             //Debug.Log("CONTAINS!");
             int xIndex = Mathf.FloorToInt((pos.x - realXMin) / (realXMax - realXMin) * _width);
@@ -219,7 +255,7 @@ public class GameBoard : MonoBehaviour {
         Rect boardRect = getBoardRect();
         float yMin = Mathf.Min(boardRect.yMin, boardRect.yMax);
         float yMax = Mathf.Max(boardRect.yMin, boardRect.yMax);
-        if (yMin < pos.y && pos.y < yMax)
+        if (yMin <= pos.y && pos.y <= yMax)
         {
             int yIndex = _board.Count - Mathf.FloorToInt((pos.y - yMin) / (yMax - yMin) * _height) - 1;
             return yIndex;
@@ -241,7 +277,7 @@ public class GameBoard : MonoBehaviour {
         }
         else
         {
-            //@TODO: Based on position, find the proper row... then retrieve the first in the row.
+            // Based on position, find the proper row... then retrieve the first in the row.
             int rowIndex = GetRowIndexOnWorldPos(pos);
             if (rowIndex != -1)
             {

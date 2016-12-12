@@ -17,12 +17,14 @@ public class SpiritGenerator : BaseFortification
     private void Start()
     {
         _timer = 0.0f;
-        CreateNewSpirit();
     }
 
     private void Update()
     {
-        UpdateSpiritGeneration();
+        if (CanUpdate())
+        {
+            UpdateSpiritGeneration();
+        }
     }
 
     private void UpdateSpiritGeneration()
