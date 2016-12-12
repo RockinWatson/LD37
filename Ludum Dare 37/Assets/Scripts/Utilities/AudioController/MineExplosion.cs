@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDeath : MonoBehaviour {
+public class MineExplosion : MonoBehaviour {
 
     public AudioSource audio_source;
-    public AudioClip au_enemy_death;
+    public AudioClip au_mine_explosion;
 
 
     // Use this for initialization
@@ -13,15 +13,13 @@ public class EnemyDeath : MonoBehaviour {
     {
 
         audio_source = gameObject.AddComponent<AudioSource>();
-        audio_source.clip = au_enemy_death;
-
+        audio_source.clip = au_mine_explosion;
     }
 
 
-    public void Enemy_Death()
+    public void Mine_Explosion()
     {
-        audio_source.clip = au_enemy_death;
+        audio_source.clip = au_mine_explosion;
         GetComponent<AudioSource>().Play();
     }
-    
 }

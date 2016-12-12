@@ -12,8 +12,11 @@ public class GiftMine : BaseFortification {
         Enemy enemy = col.gameObject.GetComponent<Enemy>();
         if (enemy != null)
         {
-            //@TODO: Transition to explody animation. - Implement different states.
+            //Audio Effect
+            var death_audio = GameObject.Find("MineExplosion");
+            death_audio.GetComponent<MineExplosion>().Mine_Explosion();
 
+            //@TODO: Transition to explody animation. - Implement different states.
             enemy.TakeDamage(_damage);
             GameBoard.Destroy(this.gameObject);
         }
