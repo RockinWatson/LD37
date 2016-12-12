@@ -2,6 +2,7 @@
 using Assets.Scripts;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using Assets.Scripts.Enemies;
 
 public class GameBoard : MonoBehaviour {
     #region Initialize Vars
@@ -17,6 +18,9 @@ public class GameBoard : MonoBehaviour {
     [SerializeField]
     private Vector2 _dim = new Vector2(1.06f, 1.06f);
 
+    [SerializeField]
+    GameObject _levelOverMenu;
+
     // Row[0]: [0] [1] [2] [3]
     // Row[1]: [0] [1] [2] [3]
     private List<List<GameCell>> _board = null;
@@ -27,8 +31,10 @@ public class GameBoard : MonoBehaviour {
     private int _score = 0;
     public Text _scoreText;
     public Text _daysTil;
+    private static int currentDay;
+    public static bool _levelOver = false;
 
-    private float _globalTimer = 500.0f;
+    public static float _globalTimer = 50;
 
     static private GameBoard _singleton = null;
     #endregion
@@ -69,10 +75,105 @@ public class GameBoard : MonoBehaviour {
 
         UpdatePlayerKeyInput();
 
-        //GLobal Timer Stuff
+        _scoreText.text = _score.ToString();
+
         _globalTimer -= Time.deltaTime;
 
-        _scoreText.text = _score.ToString();
+        _daysTil.text = GetCurrentDay().ToString();
+
+    }
+    private void FixedUpdate()
+    {
+        if (IsLevelOver())
+        {
+            LevelOverMenu();
+        }
+        if (GetCurrentDay() == 0)
+        {
+            //TODO GoToGameOver Scene
+        }
+    }
+
+    private void LevelOverClear()
+    {
+        var enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        var bullets = GameObject.FindGameObjectsWithTag("PlayerBullet");
+        foreach (var item in enemies)
+        {
+            Destroy(item);
+        }
+        foreach (var item in bullets)
+        {
+            Destroy(item);
+        }
+    }
+
+    private void LevelOverMenu()
+    {
+        Time.timeScale = 0.0f;
+        Instantiate(_levelOverMenu);
+        DestroyAllFortifications();
+        LevelOverClear();
+    }
+
+    private enum Days
+    {
+        DayZero = 0,
+        DayOne = 1,
+        DayTwo = 2,
+        DayThree = 3,
+        DayFour = 4,
+        DayFive = 5
+    }
+
+    public static int GetCurrentDay()
+    {
+        if (_globalTimer <= 50)
+        {
+           currentDay = (int)Days.DayFive;
+        }
+        if (_globalTimer <= 40)
+        {
+            currentDay = (int)Days.DayFour;
+        }
+        if (_globalTimer <= 30)
+        {
+            currentDay = (int)Days.DayThree;
+        }
+        if (_globalTimer <= 20)
+        {
+            currentDay = (int)Days.DayTwo;
+        }
+        if (_globalTimer <= 10)
+        {
+            currentDay = (int)Days.DayOne;
+        }
+        if ((int)_globalTimer == 0)
+        {
+            currentDay = (int)Days.DayZero;
+        }
+        return currentDay;
+    }
+
+    public static bool IsLevelOver()
+    {
+        if ((int)_globalTimer == 40)
+        {
+            _levelOver = true;
+        }
+        if ((int)_globalTimer == 30)
+        {
+            _levelOver = true;
+        }
+        if ((int)_globalTimer == 20)
+        {
+            _levelOver = true;
+        }
+        if ((int)_globalTimer == 10)
+        {
+            _levelOver = true;
+        }
+        return _levelOver;
     }
 
     static public Vector3 GetMouseWorldPos()
@@ -392,6 +493,7 @@ public class GameBoard : MonoBehaviour {
         Rect drawPos = new Rect(0, 0, 100, 50);
         //GUI.Label(drawPos, string.Format("SCORE: {0}", _score));
         //GUI.Label(drawPos, string.Format("SELECTED TYPE: {0}", _selectedFortificationType));
+        GUI.Label(drawPos, string.Format("Timer: {0}",_globalTimer));
         
         //Vector3 pos = GetMouseWorldPos();
         //GameCell cell = GetGameCellOnWorldPos(pos);

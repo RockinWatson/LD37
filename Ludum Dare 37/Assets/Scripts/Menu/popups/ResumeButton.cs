@@ -28,6 +28,8 @@ public class ResumeButton : MonoBehaviour
 
     private void ResumeGame()
     {
+        GameBoard._levelOver = false;
+        GameBoard._globalTimer -= 1;
         Time.timeScale = 1.0f;
     }
 }
