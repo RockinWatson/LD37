@@ -63,7 +63,11 @@ public class Enemy : MonoBehaviour {
         _health -= damage;
         if (_health < 0)
         {
+
+            var death_audio = GameObject.Find("EnemyDeath");
+            death_audio.GetComponent<EnemyDeath>().Enemy_Death();
             GameObject.Destroy(this.gameObject);
+
         }
     }
 
