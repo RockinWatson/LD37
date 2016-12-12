@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using Assets.Scripts;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GameBoard : MonoBehaviour {
     #region Initialize Vars
@@ -23,6 +24,10 @@ public class GameBoard : MonoBehaviour {
     private Fortification.Type _selectedFortificationType = Fortification.Type.NONE;
 
     private int _score = 0;
+    public Text _scoreText;
+    public Text _daysTil;
+
+    private float _globalTimer = 500.0f;
 
     static private GameBoard _singleton = null;
     #endregion
@@ -62,6 +67,11 @@ public class GameBoard : MonoBehaviour {
         UpdatePlayerMouse();
 
         UpdatePlayerKeyInput();
+
+        //GLobal Timer Stuff
+        _globalTimer -= Time.deltaTime;
+
+        _scoreText.text = _score.ToString();
     }
 
     static public Vector3 GetMouseWorldPos()
@@ -308,7 +318,7 @@ public class GameBoard : MonoBehaviour {
     private void OnGUI()
     {
         Rect drawPos = new Rect(0, 0, 100, 50);
-        GUI.Label(drawPos, string.Format("SCORE: {0}", _score));
+        //GUI.Label(drawPos, string.Format("SCORE: {0}", _score));
         //GUI.Label(drawPos, string.Format("SELECTED TYPE: {0}", _selectedFortificationType));
         
         //Vector3 pos = GetMouseWorldPos();
