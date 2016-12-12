@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: a79c2844b58217b419fdb2e475c3bc5d
+timeCreated: 1481516245
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: santaurhead_000
+    21300002: santaurhead_001
+    21300004: santaurhead_002
+    21300006: santaurhead_003
+    21300008: santaurhead_004
+    21300010: santaurhead_005
+    21300012: santaurhead_006
+    21300014: santaurhead_007
+    21300016: santaurhead_008
+    21300018: santaurhead_009
+    21300020: santaurhead_010
+    21300022: santaurhead_011
+    21300024: santaurhead_012
+    21300026: santaurhead_013
+    21300028: santaurhead_014
+    21300030: santaurhead_015
+    21300032: santaurhead_016
+    21300034: santaurhead_017
+    21300036: santaurhead_018
+    21300038: santaurhead_019
+    21300040: santaurhead_020
+    21300042: santaurhead_021
+    21300044: santaurhead_022
+    21300046: santaurhead_023
+    21300048: santaurhead_024
+    21300050: santaurhead_025
+    21300052: santaurhead_026
+    21300054: santaurhead_027
+    21300056: santaurhead_028
+    21300058: santaurhead_029
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: santaurhead_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 560
+        width: 224
+        height: 245
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.49591836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1552
+        width: 225
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_002
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1801
+        width: 225
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49555555, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_003
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1303
+        width: 224
+        height: 247
+      alignment: 9
+      pivot: {x: 0.49330357, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_004
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1802
+        width: 226
+        height: 245
+      alignment: 9
+      pivot: {x: 0.49778762, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_005
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 561
+        width: 223
+        height: 247
+      alignment: 9
+      pivot: {x: 0.49103138, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_006
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1058
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49330357, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 220
+        height: 247
+      alignment: 9
+      pivot: {x: 0.49318182, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_008
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 558
+        width: 223
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_009
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 313
+        width: 223
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49103138, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_010
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 312
+        width: 223
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49103138, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_011
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 62
+        width: 221
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4954751, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_012
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 310
+        width: 223
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4955157, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_013
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 64
+        width: 223
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4955157, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_014
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1055
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49330357, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_015
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1056
+        width: 224
+        height: 247
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_016
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1800
+        width: 225
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_017
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1553
+        width: 225
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1055
+        width: 224
+        height: 247
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_019
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1306
+        width: 225
+        height: 245
+      alignment: 9
+      pivot: {x: 0.49555555, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_020
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1553
+        width: 225
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49555555, y: 0.5020325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_021
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 808
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 807
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_023
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 810
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_024
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1552
+        width: 225
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_025
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1305
+        width: 225
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_026
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 807
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_027
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 560
+        width: 224
+        height: 246
+      alignment: 9
+      pivot: {x: 0.49776787, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_028
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1800
+        width: 226
+        height: 247
+      alignment: 9
+      pivot: {x: 0.5022124, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaurhead_029
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1304
+        width: 225
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49796748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

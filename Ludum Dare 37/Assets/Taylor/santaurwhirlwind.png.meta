@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 8edb1fb21541cc142a274039db9b7f38
+timeCreated: 1481516855
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: santaur-whirlwind_000
+    21300002: santaur-whirlwind_001
+    21300004: santaur-whirlwind_002
+    21300006: santaur-whirlwind_003
+    21300008: santaur-whirlwind_004
+    21300010: santaur-whirlwind_005
+    21300012: santaur-whirlwind_006
+    21300014: santaur-whirlwind_007
+    21300016: santaur-whirlwind_008
+    21300018: santaur-whirlwind_009
+    21300020: santaur-whirlwind_010
+    21300022: santaur-whirlwind_011
+    21300024: santaur-whirlwind_012
+    21300026: santaur-whirlwind_013
+    21300028: santaur-whirlwind_014
+    21300030: santaur-whirlwind_015
+    21300032: santaur-whirlwind_016
+    21300034: santaur-whirlwind_017
+    21300036: santaur-whirlwind_018
+    21300038: santaur-whirlwind_019
+    21300040: santaur-whirlwind_020
+    21300042: santaur-whirlwind_021
+    21300044: santaur-whirlwind_022
+    21300046: santaur-whirlwind_023
+    21300048: santaur-whirlwind_024
+    21300050: santaur-whirlwind_025
+    21300052: santaur-whirlwind_026
+    21300054: santaur-whirlwind_027
+    21300056: santaur-whirlwind_028
+    21300058: santaur-whirlwind_029
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: santaur-whirlwind_000
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 892
+        width: 152
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5610687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 888
+        width: 153
+        height: 135
+      alignment: 9
+      pivot: {x: 0.503268, y: 0.54444444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_002
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 889
+        width: 151
+        height: 134
+      alignment: 9
+      pivot: {x: 0.49668875, y: 0.5634328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_003
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 890
+        width: 152
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5601504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_004
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 753
+        width: 148
+        height: 135
+      alignment: 9
+      pivot: {x: 0.4864865, y: 0.55185187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 751
+        width: 147
+        height: 135
+      alignment: 9
+      pivot: {x: 0.4829932, y: 0.54444444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_006
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 746
+        width: 141
+        height: 141
+      alignment: 9
+      pivot: {x: 0.4609929, y: 0.5212766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_007
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 608
+        width: 138
+        height: 143
+      alignment: 9
+      pivot: {x: 0.44927537, y: 0.506993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_008
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 596
+        width: 129
+        height: 148
+      alignment: 9
+      pivot: {x: 0.4031008, y: 0.48986486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_009
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 311
+        width: 126
+        height: 148
+      alignment: 9
+      pivot: {x: 0.3968254, y: 0.4966216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_010
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 461
+        width: 129
+        height: 148
+      alignment: 9
+      pivot: {x: 0.4108527, y: 0.48986486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 602
+        width: 134
+        height: 147
+      alignment: 9
+      pivot: {x: 0.43283582, y: 0.4931973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_012
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 876
+        width: 128
+        height: 147
+      alignment: 9
+      pivot: {x: 0.40625, y: 0.4931973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_013
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 874
+        width: 130
+        height: 149
+      alignment: 9
+      pivot: {x: 0.4076923, y: 0.49328858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_014
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 732
+        width: 130
+        height: 149
+      alignment: 9
+      pivot: {x: 0.4076923, y: 0.49328858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_015
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 732
+        width: 128
+        height: 142
+      alignment: 9
+      pivot: {x: 0.4140625, y: 0.5246479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 463
+        width: 129
+        height: 137
+      alignment: 9
+      pivot: {x: 0.4108527, y: 0.54379565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_017
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 333
+        width: 129
+        height: 133
+      alignment: 9
+      pivot: {x: 0.42635658, y: 0.5601504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_018
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 596
+        width: 128
+        height: 136
+      alignment: 9
+      pivot: {x: 0.4296875, y: 0.55514705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_019
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 734
+        width: 128
+        height: 138
+      alignment: 9
+      pivot: {x: 0.4296875, y: 0.54710144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_020
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 468
+        width: 129
+        height: 138
+      alignment: 9
+      pivot: {x: 0.44186047, y: 0.54710144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_021
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 458
+        width: 127
+        height: 136
+      alignment: 9
+      pivot: {x: 0.43307087, y: 0.55514705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 122
+        height: 134
+      alignment: 9
+      pivot: {x: 0.39344263, y: 0.5634328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_023
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 319
+        width: 128
+        height: 142
+      alignment: 9
+      pivot: {x: 0.40625, y: 0.5246479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_024
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 581
+        width: 127
+        height: 149
+      alignment: 9
+      pivot: {x: 0.39370078, y: 0.5067114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_025
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 182
+        width: 124
+        height: 149
+      alignment: 9
+      pivot: {x: 0.38709676, y: 0.5067114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_026
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 167
+        width: 123
+        height: 150
+      alignment: 9
+      pivot: {x: 0.398374, y: 0.49666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_027
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 611
+        width: 139
+        height: 145
+      alignment: 9
+      pivot: {x: 0.46043167, y: 0.52068967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_028
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 883
+        width: 144
+        height: 140
+      alignment: 9
+      pivot: {x: 0.4722222, y: 0.5392857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: santaur-whirlwind_029
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 758
+        width: 149
+        height: 132
+      alignment: 9
+      pivot: {x: 0.4899329, y: 0.56439394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
