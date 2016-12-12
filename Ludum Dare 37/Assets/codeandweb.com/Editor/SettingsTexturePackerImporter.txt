@@ -2,18 +2,60 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Taylor/batbaddie.tpsheet
+- Assets/Taylor/bigheadsantaur.tpsheet
+- Assets/Taylor/canesdamage.tpsheet
+- Assets/Taylor/canesdeath.tpsheet
+- Assets/Taylor/carrotcock.tpsheet
+- Assets/Taylor/coalelf.tpsheet
 - Assets/Taylor/elfchat1.tpsheet
+- Assets/Taylor/explodedeath.tpsheet
+- Assets/Taylor/ghostbaddie.tpsheet
+- Assets/Taylor/mine.tpsheet
+- Assets/Taylor/polarbear.tpsheet
+- Assets/Taylor/santaurdoubleshot.tpsheet
+- Assets/Taylor/santaurwhirlwind.tpsheet
+- Assets/Taylor/smoke.tpsheet
+- Assets/Taylor/sniper.tpsheet
 - Assets/Taylor/spirit-large-gameboard.tpsheet
 - Assets/Taylor/spirit-little-menus.tpsheet
 - Assets/Taylor/xmaslights.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Taylor/batbaddie.png
+- Assets/Taylor/bigheadsantaur.png
+- Assets/Taylor/canesdamage.png
+- Assets/Taylor/canesdeath.png
+- Assets/Taylor/carrotcock.png
+- Assets/Taylor/coalelf.png
 - Assets/Taylor/elfchat1.png
+- Assets/Taylor/explodedeath.png
+- Assets/Taylor/ghostbaddie.png
+- Assets/Taylor/mine.png
+- Assets/Taylor/polarbear.png
+- Assets/Taylor/santaurdoubleshot.png
+- Assets/Taylor/santaurwhirlwind.png
+- Assets/Taylor/smoke.png
+- Assets/Taylor/sniper.png
 - Assets/Taylor/spirit-large-gameboard.png
 - Assets/Taylor/spirit-little-menus.png
 - Assets/Taylor/xmaslights.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 
