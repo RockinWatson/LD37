@@ -13,7 +13,7 @@ public class AudioController : MonoBehaviour {
     void Awake () {
 
         audio_source = gameObject.AddComponent<AudioSource>();
-        audio_source.clip = au_enemy_death;
+        audio_source.clip = au_spirit_pickup;
                 
     }
 	
