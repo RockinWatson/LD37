@@ -29,7 +29,7 @@ public class GameBoard : MonoBehaviour {
     private Fortification.Type _selectedFortificationType = Fortification.Type.NONE;
     private BaseFortification _previewFortification = null;
 
-    private int _score = 0;
+    private int _score = 10;
     public Text _scoreText;
     public Text _daysTil;
     private static int currentDay;
@@ -500,7 +500,7 @@ public class GameBoard : MonoBehaviour {
         Rect drawPos = new Rect(0, 0, 100, 50);
         //GUI.Label(drawPos, string.Format("SCORE: {0}", _score));
         //GUI.Label(drawPos, string.Format("SELECTED TYPE: {0}", _selectedFortificationType));
-        GUI.Label(drawPos, string.Format("Timer: {0}",_globalTimer));
+        //GUI.Label(drawPos, string.Format("Timer: {0}",_globalTimer));
         
         //Vector3 pos = GetMouseWorldPos();
         //GameCell cell = GetGameCellOnWorldPos(pos);
