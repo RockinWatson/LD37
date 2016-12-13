@@ -29,7 +29,7 @@ public class GameBoard : MonoBehaviour {
     private Fortification.Type _selectedFortificationType = Fortification.Type.NONE;
     private BaseFortification _previewFortification = null;
 
-    private int _score = 10;
+    private int _score = 25;
     public Text _scoreText;
     public Text _daysTil;
     private static int currentDay;
