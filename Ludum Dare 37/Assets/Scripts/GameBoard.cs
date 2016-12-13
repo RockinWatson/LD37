@@ -3,6 +3,7 @@ using Assets.Scripts;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using Assets.Scripts.Enemies;
+using UnityEngine.SceneManagement;
 
 public class GameBoard : MonoBehaviour {
     #region Initialize Vars
@@ -67,6 +68,11 @@ public class GameBoard : MonoBehaviour {
         return _singleton;
     }
 
+    private void Start()
+    {
+        _globalTimer = 400;
+    }
+
     private void Update()
     {
         DrawBoard();
@@ -91,6 +97,7 @@ public class GameBoard : MonoBehaviour {
         if (GetCurrentDay() == 0)
         {
             //TODO GoToGameOver Scene
+            SceneManager.LoadScene("WinScene");
         }
     }
 

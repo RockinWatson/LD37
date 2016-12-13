@@ -32,31 +32,31 @@ namespace Assets.Scripts.Enemies
             if (!isSpawning && GameBoard.GetCurrentDay() == 5)
             {
                 isSpawning = true; //Yep, we're going to spawn
-                int enemyIndex = Random.Range(0, 1);
+                int enemyIndex = Random.Range(0, enemies.Length - 3);
                 StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime, maxTime)));
             }
             if (!isSpawning && GameBoard.GetCurrentDay() == 4)
             {
                 isSpawning = true; //Yep, we're going to spawn
-                int enemyIndex = Random.Range(0, 1);
+                int enemyIndex = Random.Range(0, enemies.Length - 3);
                 StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime - _day4, maxTime - _day4)));
             }
             if (!isSpawning && GameBoard.GetCurrentDay() == 3)
             {
                 isSpawning = true; //Yep, we're going to spawn
-                int enemyIndex = Random.Range(0, 1);
+                int enemyIndex = Random.Range(0, enemies.Length - 2);
                 StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime - _day3, maxTime - _day3)));
             }
             if (!isSpawning && GameBoard.GetCurrentDay() == 2)
             {
                 isSpawning = true; //Yep, we're going to spawn
-                int enemyIndex = Random.Range(0, 1);
+                int enemyIndex = Random.Range(0, enemies.Length);
                 StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime - _day2, maxTime - _day2)));
             }
             if (!isSpawning && GameBoard.GetCurrentDay() == 1)
             {
                 isSpawning = true; //Yep, we're going to spawn
-                int enemyIndex = Random.Range(0, 1);
+                int enemyIndex = Random.Range(0, enemies.Length);
                 StartCoroutine(SpawnObject(enemyIndex, Random.Range(minTime - _day1, maxTime - _day1)));
             }
         }

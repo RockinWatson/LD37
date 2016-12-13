@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Assets.Scripts;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour {
 
@@ -52,7 +53,7 @@ public class Enemy : MonoBehaviour {
         {
             transform.Translate(new Vector3(0, 0, 0));
             canMove = false;
-            Debug.Log("Hitten Dat Stopper");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 
