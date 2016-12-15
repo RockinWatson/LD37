@@ -206,13 +206,22 @@ public class GameBoard : MonoBehaviour {
             case Fortification.Type.TOWER3:
                 return 15;
             case Fortification.Type.TOWER4:
-                return 20;
-            case Fortification.Type.TOWER5:
                 return 25;
+            case Fortification.Type.TOWER5:
+                return 30;
             default:
                 Debug.LogError("UNRECOGNIZED TYPE!");
                 return 0;
         }
+    }
+
+    private bool CanPlaceSelectedFortificationOnGameCell(GameCell cell)
+    {
+        return (
+            !cell.IsSet() &&
+            (_selectedFortificationType != Fortification.Type.NONE) &&
+            (GetCostOfFortification(_selectedFortificationType) <= _score)
+            );
     }
 
     private void UpdatePlayerMouse()
@@ -229,21 +238,15 @@ public class GameBoard : MonoBehaviour {
                 {
                     cell.RemoveFortification();
                 }
-                else
+                else if (CanPlaceSelectedFortificationOnGameCell(cell))
                 {
-                    if (_selectedFortificationType != Fortification.Type.NONE)
-                    {
-                        int cost = GetCostOfFortification(_selectedFortificationType);
-                        if (cost <= _score)
-                        {
-                            _score -= cost;
-                            DestroyPreviewFortification();
+                    DestroyPreviewFortification();
 
-                            //@TODO: Pay for the shit.
-                            cell.SetFortification(_selectedFortificationType);
-                            _selectedFortificationType = Fortification.Type.NONE;
-                        }
-                    }
+                    int cost = GetCostOfFortification(_selectedFortificationType);
+                    _score -= cost;
+
+                    cell.SetFortification(_selectedFortificationType);
+                    _selectedFortificationType = Fortification.Type.NONE;
                 }
             }
             else

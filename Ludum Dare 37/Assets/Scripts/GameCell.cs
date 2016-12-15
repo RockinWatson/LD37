@@ -12,6 +12,7 @@ namespace Assets.Scripts
 
         private Fortification _fortification = null;
         public Fortification GetFortification() { return _fortification; }
+        public bool IsSet() { return _fortification != null && _fortification.IsSet(); }
 
         public void SetFortification(Fortification.Type type)
         {
