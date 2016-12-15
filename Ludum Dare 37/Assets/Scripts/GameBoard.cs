@@ -296,23 +296,23 @@ public class GameBoard : MonoBehaviour {
         //@TEMP: Mostly TEMP / DEBUG to set Fortification Types quickly.
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            _selectedFortificationType = Fortification.Type.TOWER1;
+            SetSelectedFortificationType(Fortification.Type.TOWER1);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            _selectedFortificationType = Fortification.Type.TOWER2;
+            SetSelectedFortificationType(Fortification.Type.TOWER2);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            _selectedFortificationType = Fortification.Type.TOWER3;
+            SetSelectedFortificationType(Fortification.Type.TOWER3);
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            _selectedFortificationType = Fortification.Type.TOWER4;
+            SetSelectedFortificationType(Fortification.Type.TOWER4);
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            _selectedFortificationType = Fortification.Type.TOWER5;
+            SetSelectedFortificationType(Fortification.Type.TOWER5);
         }
 
         if (Input.GetKeyDown(KeyCode.X))
