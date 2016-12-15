@@ -29,6 +29,9 @@ public class GameBoard : MonoBehaviour {
     private Fortification.Type _selectedFortificationType = Fortification.Type.NONE;
     private BaseFortification _previewFortification = null;
 
+    private bool _inputAlreadyHandled = false;
+    public void SetInputAlreadyHandled() { _inputAlreadyHandled = true; }
+
     private int _score = 25;
     public Text _scoreText;
     public Text _daysTil;
@@ -87,6 +90,7 @@ public class GameBoard : MonoBehaviour {
 
         _daysTil.text = GetCurrentDay().ToString();
 
+        _inputAlreadyHandled = false;
     }
     private void FixedUpdate()
     {
@@ -218,6 +222,7 @@ public class GameBoard : MonoBehaviour {
     private bool CanPlaceSelectedFortificationOnGameCell(GameCell cell)
     {
         return (
+            !_inputAlreadyHandled &&
             !cell.IsSet() &&
             (_selectedFortificationType != Fortification.Type.NONE) &&
             (GetCostOfFortification(_selectedFortificationType) <= _score)

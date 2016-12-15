@@ -28,6 +28,8 @@ public class SpiritLarge : MonoBehaviour {
 
         GameBoard.Get().AddScore(_score);
         GameObject.Destroy(this.gameObject);
+
+        GameBoard.Get().SetInputAlreadyHandled();
     }
 
     private void OnMouseDown()
