@@ -43,4 +43,13 @@ public class BaseFortification : MonoBehaviour {
         _health -= damage;
         return (_health <= 0);
     }
+
+    virtual public void PlayAudio()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        if (audio != null)
+        {
+            audio.Play();
+        }
+    }
 }

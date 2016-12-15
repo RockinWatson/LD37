@@ -15,11 +15,6 @@ public class CoalElf : BaseFortification {
 	private void Start ()
     {
         _timer = 0.0f;
-
-        
-        //Build Audio
-        var create_audio = GameObject.Find("coal_elf(Clone)");
-        create_audio.GetComponent<ElfAudio1>().Creation_Audio();
     
     }
 	
@@ -51,5 +46,15 @@ public class CoalElf : BaseFortification {
         GameObject go = (GameObject)GameObject.Instantiate(Resources.Load("coal_shot"));
         CoalShot shot = go.GetComponent<CoalShot>();
         shot.Initialize(_shotOrigin.position);
+    }
+
+    public override void PlayAudio()
+    {
+        //Build Audio
+        ElfAudio1 audio = GetComponent<ElfAudio1>();
+        if (audio != null)
+        {
+            audio.Creation_Audio();
+        }
     }
 }

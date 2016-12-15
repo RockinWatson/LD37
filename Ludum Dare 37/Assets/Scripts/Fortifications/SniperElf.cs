@@ -16,10 +16,6 @@ public class SniperElf : BaseFortification
     {
         _timer = 0.0f;
 
-        //Build Audio
-        var create_audio = GameObject.Find("elf_sniper(Clone)");
-        create_audio.GetComponent<ElfAudio2>().Creation_Audio();
-
     }
 
     // Update is called once per frame
@@ -50,5 +46,15 @@ public class SniperElf : BaseFortification
         GameObject go = (GameObject)GameObject.Instantiate(Resources.Load("sniper_shot"));
         SniperShot shot = go.GetComponent<SniperShot>();
         shot.Initialize(_shotOrigin.position);
+    }
+
+    public override void PlayAudio()
+    {
+        //Build Audio
+        ElfAudio2 audio = GetComponent<ElfAudio2>();
+        if (audio != null)
+        {
+            audio.Creation_Audio();
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace Assets.Scripts
             {
                 _fort = GetPrefab(type);
                 _fort.gameObject.transform.position = _pos;
+                _fort.PlayAudio();
                 _type = type;
             }
             else

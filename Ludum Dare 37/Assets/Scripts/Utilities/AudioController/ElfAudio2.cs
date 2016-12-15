@@ -10,31 +10,20 @@ public class ElfAudio2 : MonoBehaviour {
 
     int audio_choice;
 
-    // Use this for initialization
-    void Awake()
-    {
-
-        audio_source = gameObject.AddComponent<AudioSource>();
-        audio_source.clip = au_placement1;
-
-    }
-
     public void Creation_Audio()
     {
-        audio_choice = Random.Range(1, 50);
+        audio_source = gameObject.GetComponent<AudioSource>();
+        audio_source.clip = au_placement1;
 
-
-        if (audio_choice < 25)
+        if (Random.value < 0.5f)
         {
-
             audio_source.clip = au_placement1;
-            GetComponent<AudioSource>().Play();
         }
         else
         {
             audio_source.clip = au_placement2;
-            GetComponent<AudioSource>().Play();
         }
 
+        audio_source.Play();
     }
 }
