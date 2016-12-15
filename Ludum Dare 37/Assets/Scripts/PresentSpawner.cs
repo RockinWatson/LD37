@@ -24,7 +24,7 @@ namespace Assets.Scripts
         void Update()
         {
             //We only want to spawn one at a time, so make sure we're not already making that call
-            if (!isSpawning && GameBoard.GetCurrentDay() == 5)
+            if (!isSpawning)
             {
                 isSpawning = true; //Yep, we're going to spawn
                 int enemyIndex = Random.Range(0, enemies.Length);
