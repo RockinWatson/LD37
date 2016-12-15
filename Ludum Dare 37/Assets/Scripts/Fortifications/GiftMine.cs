@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts;
 
 public class GiftMine : BaseFortification {
 
@@ -26,7 +27,8 @@ public class GiftMine : BaseFortification {
 
             //@TODO: Transition to explody animation. - Implement different states.
             enemy.TakeDamage(_damage);
-            GameBoard.Destroy(this.gameObject);
+            GameCell cell = GameBoard.Get().GetGameCellOnWorldPos(transform.position);
+            cell.RemoveFortification();
         }
     }
 
